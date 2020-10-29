@@ -14,7 +14,7 @@ rp("https://reddit.com/r/popular.json")
         redditData.data.children.forEach(article => {
             let obj = {
                 title: article.data.title,
-                author: article. data.author,
+                author: article.data.author,
                 url: article.data.url
             };
             //* Push each extracted article to an array.

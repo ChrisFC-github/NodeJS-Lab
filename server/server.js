@@ -30,7 +30,7 @@ let chirps = [
 let writePath = path.join(__dirname, "../chirps.json");
 chirps = JSON.stringify(chirps);
 //* or fs.writeFile(writePath, JSON.stringify(chirps));
-fs.writeFile(writePath, JSON.stringify(chirps), () => {
+fs.writeFile(writePath, chirps, () => {
     //* Add code to server.js that reads the file and outputs the chirps to the console
     fs.readFile(writePath, (err, data) => {
         if (err) {
